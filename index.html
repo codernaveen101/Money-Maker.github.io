@@ -1,86 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Maker</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/go.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav>
-
-    </nav>
-    <section>
         <h1>Money Maker</h1>
+    </nav>
+    <section id="main-text">
+        <h1>Making money with ease.</h1>
     </section>
-    <section>
-        <h1>Make Money With Ease</h1>
-    </section>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <section>
         <div class="info">
+            <br>
             <h1>Why would it would be beneficial for the user to implement their own code?</h1>
             <ul>
                 <li>The user will get more coding experiences</li>
                 <li>
-                    The user would need to use their own API key to connect to their Alpaca account, so telling the user to put in their API key into the website would be unsafe.
+                    The user would need to use their own API key to connect to their Alpaca account, so telling the user
+                    to put in their API key into the website would be unsafe.
                     <ul>
-                        <li>NOTE: API keys need to stay private because if a threat actor gains access to the keys, they can cause data breaches and financial losses</li>
+                        <li>NOTE: API keys need to stay private because if a threat actor gains access to the keys, they
+                            can cause data breaches and financial losses</li>
                     </ul>
-                    
+
                 </li>
                 <li>The user will have more control over which stock companies to invest in</li>
             </ul>
+            <br>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
 
     <section>
         <div class="info">
+            <br>
             <h1>What resources are needed</h1>
-            <p>Three main things are needed: an Alpaca (brokerage) account, Visual Studio Code (to implement the code), and Python environment</p>
+            <p>Three main things are needed: an Alpaca (brokerage) account, Visual Studio Code (to implement the code),
+                and Python environment</p>
+            <br>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <section>
         <div class="info">
-            <h1>Step 1: Create an Alapca account</h1>
+            <br>
+            <h1>Step 1: Create an Alpaca account</h1>
             <ol>
                 <li>Go to https://alpaca.markets/stocks</li>
                 <li>Create an account.</li>
-                <li>Verify your account using multi-factor acutentication (MFA).</li>
-                <li></li>
+                <li>Verify your account using multi-factor authentication (MFA).</li>
             </ol>
+            <h3>The reason why you need to do this: Alpaca is a brokerage that has a paper trading feature, which also
+                allows for the use of API keys, so trading can be automated.</h3>
+            <br>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <section>
         <div class="info">
+            <br>
             <h1>Step 2: Download Visual Studio Code</h1>
+            <ol>
+                <li>Go to the Visual Studio Code website: https://code.visualstudio.com/download</li>
+                <li>Download the installer for your operating system.</li>
+                <li>Run the installer and follow the setup instructions.</li>
+            </ol>
+            <h3>The reason why you need to do this: Visual Studio Code will help you write and manage your Python code
+                more effectively. It's an IDE (Integrated Development Environment).</h3>
+            <br>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
     <section>
         <div class="info">
-            <h1>Step 3: Create an Alapca account</h1>
+            <br>
+            <h1>Step 3: Download the following Python extensions on Visual Studio Code</h1>
+            <ol>
+                <li>Python</li>
+                <li>Pylance</li>
+                <li>Python Debugger</li>
+                <li>Python Environments</li>
+                <li>autopep8</li>
+            </ol>
+            <h3>The reason why you need to do this: This will help format your Python code to conform to the PEP 8 style
+                guide, compile your code and help fix it easily.</h3>
+            <br>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <section>
         <div class="info">
-            <h1>Step 4: Download the Python Environment</h1>
+            <br>
+            <h1>Step 4: Download the Python Environment on the official website.</h1>
+            <ol>
+                <li>Go to the official Python website: https://www.python.org/downloads/</li>
+                <ol>
+                    <li>You can also just get the standalone installer for your operating system. (what I did)</li>
+                </ol>
+                <li>Download the latest version of Python.</li>
+                <li>Run the installer and follow the setup instructions.</li>
+            </ol>
+            <h3>The reason why you need to do this: The Python environment is necessary for running Python code and
+                downloading libraries.</h3>
+            <br>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <section>
         <div class="info">
+            <br>
             <h1>Step 5: Create a project for Visual Studio Code</h1>
+            <ol>
+                <li>Open Visual Studio Code.</li>
+                <li>Create a new folder for your project.</li>
+                <li>Open the folder in Visual Studio Code.</li>
+                <li>Create a new Python file (e.g., money_maker.<strong>py</strong>) in the project folder.</li>
+                <li>Create a .env file in the project folder also to store your API keys (this file keeps your keys
+                    safe).</li>
+                <ul>
+                    <li>If you are going to be using GitHub, make sure to add the .env file to a .gitignore file so that
+                        it doesn't get pushed to your repository. You can add it by typing the name of your .env file.
+                    </li>
+                </ul>
+            </ol>
+            <h3>The reason why you need to do this: This file will contain the code for your money maker.</h3>
+            <br>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
     <section>
         <div class="info">
+            <br>
             <h1>Step 6: Get your API keys from Alpaca</h1>
+            <ol>
+                <li>Log in to your Alpaca account.</li>
+                <li>Go to the "API Keys" section in your account dashboard (paper account).</li>
+                <li>Generate a new set of API keys (API Key ID and Secret Key).</li>
+                <li>For now, don't lose these keys!</li>
+            </ol>
+            <h3>The reason why you need to do this: The API keys are necessary for authenticating your money maker
+                with your Alpaca account.</h3>
+            <br>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
     <section>
         <div class="info">
+            <br>
             <h1>Step 7: Just use this code!</h1>
+            <ol>
+                <li>Install the required Python libraries by running the following commands in the terminal:
+                    <pre><code class="python">pip install alpaca-trade-api python-dotenv pandas</code></pre>
+                <li>Copy and paste this code into your Python file in VS Code:
+                    <pre><code class="python">from alpaca_trade_api import TimeFrame, REST
+from dotenv import load_dotenv
+import os
+import time
+
+load_dotenv()
+
+api = REST(os.getenv('ALPACA_KEY'), os.getenv(
+    'ALPACA_SECRET'), os.getenv('ENDPOINT'))
+
+accountInfo = api.get_account()
+
+print(accountInfo.status)
+
+
+def moving_average(df):
+    df["sma_fast"] = df["close"].rolling(window=5).mean()
+    df["sma_slow"] = df["close"].rolling(window=20).mean()
+
+    latest_fast_average = df["sma_fast"].iloc[-3:]
+    latest_slow_average = df["sma_slow"].iloc[-3:]
+
+    if all(latest_fast_average > latest_slow_average):
+        return "buy"
+    elif all(latest_fast_average < latest_slow_average):
+        return "sell"
+    else:
+        return "hold"
+
+
+def alpaca_order(decision, symbol, quantity):
+    positions = {p.symbol: p for p in api.list_positions()}
+    pending_orders = api.list_orders(status="open")
+
+    if decision == "buy" and symbol not in positions and symbol not in [o.symbol for o in pending_orders]:
+        api.submit_order(symbol=symbol, qty=quantity, side="buy",
+                         type="market", time_in_force="gtc")
+    if decision == "sell" and symbol in positions:
+        api.submit_order(symbol=symbol, qty=quantity,
+                         side="sell", type="market", time_in_force="gtc")
+
+
+stocks_company = [
+    "AAPL",
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "NVDA",
+    "META",
+    "TSLA",
+    "JPM",
+    "V",
+    "WMT",
+    "BAC",
+    "PG",
+    "MA",
+    "XOM",
+    "HD",
+    "CVX",
+    "PFE",
+    "CSCO",
+    "AVGO",
+    "PEP",
+    "COST",
+    "ABBV",
+    "TMO",
+    "ORCL",
+    "DHR",
+    "ACN",
+    "NKE",
+    "QCOM",
+    "TXN",
+    "UNP",
+    "NEE",
+    "RTX",
+    "AMD",
+    "HON",
+    "LOW",
+    "SBUX",
+    "INTU",
+    "CAT",
+    "AMAT",
+    "PYPL",
+    "GS",
+    "BLK",
+    "ADI",
+    "MDLZ",
+    "TGT",
+    "MU",
+    "SLB",
+    "ADP",
+    "ISRG",
+    "MMC"
+]
+
+while True:
+    for ticker in stocks_company:
+        bars = api.get_bars(ticker, TimeFrame.Minute, limit=100).df
+        decision = moving_average(bars)
+        print(f"{ticker} = {decision}")
+        alpaca_order(decision, ticker, 1)
+    time.sleep(120)
+</code></pre>
+
+                </li>
+                <ul>
+                    <li>
+                        NOTE: You can choose your preferred stock companies by changing the values in the
+                        stocks_company list. Just make sure to use the correct stock ticker symbols.
+                    </li>
+                    <li>
+                        If you would like to visit my GitHub repository for this code, you can go to: <a
+                            href="https://github.com/yourusername/yourrepository">my GitHub repository</a>
+                    </li>
+                </ul>
+                <li>Now, go to your .env file and add in your API Key ID and Secret Key. This is how you would do that:
+                    <pre><code class="python">ALPACA_KEY = "insert_key_here"
+
+ALPACA_SECRET = "insert_secret_here"
+
+ENDPOINT = "https://paper-api.alpaca.markets"</code></pre>
+                </li>
+                <li>Save the file.</li>
+            </ol>
+            <h1>The reason why you need to do this: This code implements a simple moving average strategy to make buy
+                and sell
+                decisions based on stock price data.</h1>
+            <br>
         </div>
     </section>
-    
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section>
+        <div class="info">
+            <br>
+            <h1>Run your Money Maker Bot!</h1>
+            <ol>
+                <li>In the top of your VS Code Project in your python file, you can click "Run" (a play button) to start
+                    the bot.</li>
+            </ol>
+            <br>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section>
+        <div class="info">
+            <br>
+            <h1>Disclaimer</h1>
+            <p>This code is for educational purposes only. Trading stocks involves risks. It is recommeded to use this
+                only with a paper trading account.</p>
+            <br>
+        </div>
+    </section>
+
 
 </body>
+
 </html>
