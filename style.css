@@ -9,12 +9,12 @@
 }
 
 body {
-    background-color: #24222e;
+    background-color: #000000;
 }
 
 /*#22203b*/
 #main-text {
-    background-color: #22203b;
+    background-color: #000000;
     width: 100vw;
     height: 100vh;
     justify-content: center;
@@ -32,7 +32,7 @@ body {
 }
 
 nav {
-    background-color: #22203b;
+    background-color: #313133;
     position: fixed;
     top: 0;
     left: 0;
@@ -45,13 +45,13 @@ nav {
 }
 
 .info {
-    background-color: #22203b;
+    background-color: #313133;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 90vw;
+    width: 75vw;
     border-radius: 10rem;
     margin: 0 auto;
 }
@@ -62,7 +62,8 @@ li {
 }
 
 .python {
-    background-color: orange;
+    background-color: rgb(128, 126, 122);
+    color: white;
     border-radius: 2rem;
     align-items: none;
     text-align: left;
